@@ -628,7 +628,16 @@ export default function AZStudioEditorialPage() {
         
         {/* Ambient Video Background with Clean Dark Vignette (No Muddy Brown Wash) */}
         <div className="absolute inset-0 z-0">
-          <img src="/hero_bg.jpg" alt="AZ Studio Procedure" className="w-full h-full object-cover opacity-85 scale-105 transition-transform duration-1000" />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="/studio_room.jpg"
+            className="w-full h-full object-cover opacity-90 scale-100"
+          >
+            <source src="/hero.mp4" type="video/mp4" />
+          </video>
           {/* Crisp, cinematic neutral vignette gradient matching FueGenix */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/20 to-[#0C0908]" />
           {/* Subtle champagne-gold ambient light in top right */}
